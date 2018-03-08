@@ -27,7 +27,7 @@
     "productName": "Avançando com Electron",
     "publish": {
       "provider": "github",
-      "owner": "erikfig",
+      "owner": "schoolofnetcom",
       "repo": "avancando-com-electron"
     },
     "directories": {
