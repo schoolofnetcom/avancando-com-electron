@@ -1,0 +1,41 @@
+{
+  "name": "electron-curso",
+  "version": "1.0.0",
+  "description": "App de exemplo do curso",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron .",
+    "build": "cross-env NODE_ENV=production electron-builder -p always",
+    "build:dir": "cross-env NODE_ENV=production electron-builder --dir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Erik Figueiredo <erik.figueiredo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "electron": "^1.8.3",
+    "electron-builder": "^20.4.0",
+    "electron-reload": "^1.2.2"
+  },
+  "dependencies": {
+    "electron-updater": "^2.21.0",
+    "mousetrap": "^1.6.1"
+  },
+  "build": {
+    "appId": "com.schoolofnet.electron-curso",
+    "productName": "Avançando com Electron",
+    "publish": {
+      "provider": "github",
+      "owner": "erikfig",
+      "repo": "avancando-com-electron"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "tray.png",
+      "target": "nsis"
+    }
+  }
+}
